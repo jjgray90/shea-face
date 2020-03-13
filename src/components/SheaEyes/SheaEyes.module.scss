@@ -1,0 +1,11 @@
+.eye {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  //   border: 2px solid red;
+  width: 300px;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+}
