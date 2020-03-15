@@ -1,15 +1,14 @@
 import React from "react";
 import styles from "./App.module.scss";
-import shea from "./Assets/shea.png";
 import SheaFace from "./components/SheaFace";
+import shea from "./Assets/shea.png";
+
 
 const App = () => {
   return (
-    <>
-      <div className={styles.fullFace}>
-        <SheaFace img={shea} />
-      </div>
-    </>
+    <div className={styles.fullFace}>
+      <SheaFace img={shea} />
+    </div>
   );
 };
 
