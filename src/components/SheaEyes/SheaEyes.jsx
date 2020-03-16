@@ -5,14 +5,11 @@ import RightEye from "../RightEye";
 import left from "../../Assets/left.png";
 import right from "../../Assets/right.png";
 
-const SheaEyes = props => {
-  const { img, spin } = props
-
+const SheaEyes = () => {
   const [eyesStart, rotateEyes] = useState(true);
   const spinEyes = eyesStart ? "" : styles.rotate;
   return (
-    <div className={styles.eye}
-      onClick={() => rotateEyes(!eyesStart)}>
+    <div className={styles.eye} onClick={() => rotateEyes(!eyesStart)}>
       <LeftEye img={left} spin={spinEyes} />
       <RightEye img={right} spin={spinEyes} />
     </div>
